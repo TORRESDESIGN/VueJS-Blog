@@ -9,19 +9,14 @@
 
 <body>
 
-	<h1>Components</h1>
-	<p>This is good for creating html components with the data being in JS and creating a button that can modify that data.</p>
-
-	<div id="vue-app-one">
-		<h2>Vue app one</h2>
-		<greeting></greeting>
+	<div id="vue-app">
+		<h2>Refs</h2>
+		<p>This is how you use refs and grab information about them, like input boxes or just data.</p>
+		<input type="text" ref="input" />
+		<button v-on:click="readRefs">Submit</button>
+		<p>Your fav food: {{ output }}</p>
+		<div ref="test">hello</div>
 	</div>
-
-
-	<div id="vue-app-two">
-		<h2>Vue app two</h2>
-		<greeting></greeting>
-	</div> 
 
 	<script src="app.js"></script>
 </body>
