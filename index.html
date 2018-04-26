@@ -9,19 +9,18 @@
 
 <body>
 
-	<h1>Multiple Vue Instances</h1>
-	<p>This is a good way to make mutiple little widgets on a page</p>
+	<h1>Components</h1>
+	<p>This is good for creating html components with the data being in JS and creating a button that can modify that data.</p>
 
 	<div id="vue-app-one">
-		<h2>{{ title }}</h2>
-		<p>{{greet}}</p>
+		<h2>Vue app one</h2>
+		<greeting></greeting>
 	</div>
 
 
 	<div id="vue-app-two">
-		<h2>{{ title }}</h2>
-		<p>{{greet}}</p>
-		<button v-on:click="changeTitle">Change App One title</button>
+		<h2>Vue app two</h2>
+		<greeting></greeting>
 	</div> 
 
 	<script src="app.js"></script>
